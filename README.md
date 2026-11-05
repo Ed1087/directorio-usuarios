@@ -25,3 +25,13 @@ y sus publicaciones mediante una API externa.
 - JavaScript
 - JSONPlaceholder API
 - Git y GitHub
+
+## Publicación
+
+**Repositorio GitHub:**  
+https://github.com/Ed1087/directorio-usuarios
+
+**Aplicación publicada en GitHub Pages:**  
+https://ed1087.github.io/directorio-usuarios/
+
+La aplicación permite consultar usuarios y sus publicaciones mediante Fetch API, utilizando JSONPlaceholder.
