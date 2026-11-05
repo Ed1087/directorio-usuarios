@@ -205,7 +205,7 @@ const apiBotonRecargar = document.getElementById("recargarUsuarios");
 
 // Consulta la lista de usuarios.
 async function cargarUsuariosAPI() {
-  apiEstadoUsuarios.textContent = "Cargando usuarios...";
+  apiEstadoUsuarios.textContent = "Cargando usuarios de nuestra comunidad...";
   apiListaUsuarios.replaceChildren();
   apiBotonRecargar.disabled = true;
 
