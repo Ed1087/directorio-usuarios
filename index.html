@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aurora Libros, una librería local con una experiencia digital editorial, inmersiva y humana.">
+  <title>Aurora Libros | Donde empiezan otras vidas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Aurora Libros, inicio">
+      <span class="brand-mark">A</span>
+      <span>
+        <strong>AURORA</strong>
+        <small>LIBROS & CAFÉ</small>
+      </span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Navegación principal">
+      <a href="#explorar">Explorar</a>
+      <a href="#historia">La librería</a>
+      <a href="#club">Club</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="Buscar libros">⌕</button>
+      <button class="cart-btn" id="cartBtn" aria-label="Abrir carrito">
+        Bolsa <span id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">LIBROS PARA QUEDARSE UN RATO</p>
+        <h1>No busques<br><em>un libro.</em><br>Encuentra <span>una puerta.</span></h1>
+        <p class="hero-text">
+          Una librería local para perderse a propósito. Historias, ideas y autores
+          seleccionados para lectores curiosos.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-dark" href="#explorar">Entrar a la librería <span>↘</span></a>
+          <button class="text-btn" id="surpriseBtn">Sorpréndeme <span>✦</span></button>
+        </div>
+      </div>
+
+      <div class="hero-stage" aria-label="Selección destacada">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="floating-note note-one">NUEVO<br><strong>↓</strong></div>
+        <div class="floating-note note-two">LECTURAS<br>QUE DEJAN<br>HUELLA</div>
+        <article class="hero-book">
+          <div class="book-spine">AURORA · 01</div>
+          <div class="book-cover">
+            <span class="cover-number">01</span>
+            <h2>La<br>vegetación<br>del deseo</h2>
+            <p>ANA BLANCO</p>
+            <div class="cover-sun"></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="marquee" aria-label="Conceptos de la librería">
+      <div>FICCIÓN <span>✦</span> ENSAYO <span>✦</span> POESÍA <span>✦</span> INFANCIA <span>✦</span> ARTE <span>✦</span> CURIOSIDAD <span>✦</span></div>
+    </section>
+
+    <section class="explore section" id="explorar">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">01 / CURADURÍA</p>
+          <h2>Para cada versión<br>de ti.</h2>
+        </div>
+        <p class="section-intro">No ordenamos libros por obligación. Los ordenamos por ganas.</p>
+      </div>
+
+      <div class="category-pills" id="categoryPills">
+        <button class="pill active" data-category="Todos">Todos</button>
+        <button class="pill" data-category="Ficción">Ficción</button>
+        <button class="pill" data-category="Ensayo">Ensayo</button>
+        <button class="pill" data-category="Poesía">Poesía</button>
+        <button class="pill" data-category="Infantil">Infantil</button>
+        <button class="pill" data-category="Arte">Arte</button>
+      </div>
+
+      <div class="book-grid" id="bookGrid"></div>
+    </section>
+
+    <section class="manifesto section" id="historia">
+      <div class="manifesto-number">02</div>
+      <div class="manifesto-copy">
+        <p class="eyebrow">LA EXPERIENCIA AURORA</p>
+        <h2>Una librería que no parece una tienda.</h2>
+        <p>
+          Diseñamos cada rincón para que comprar sea solo una parte de la experiencia.
+          Aquí puedes descubrir, hojear, guardar para después y dejar que el azar
+          haga su trabajo.
+        </p>
+        <div class="manifesto-stats">
+          <div><strong>2.400+</strong><span>historias</span></div>
+          <div><strong>14</strong><span>editoriales locales</span></div>
+          <div><strong>1</strong><span>regla: disfruta</span></div>
+        </div>
+      </div>
+      <div class="manifesto-art">
+        <div class="sun"></div>
+        <div class="arch"></div>
+        <span>READ<br>SLOWLY</span>
+      </div>
+    </section>
+
+    <section class="club section" id="club">
+      <div class="club-card">
+        <div>
+          <p class="eyebrow">03 / CLUB AURORA</p>
+          <h2>Tu próxima lectura puede encontrarte a ti.</h2>
+          <p>Déjanos tres pistas sobre tu estado de ánimo y te proponemos una lectura.</p>
+        </div>
+        <button class="btn btn-light" id="quizBtn">Quiero una recomendación <span>→</span></button>
+      </div>
+    </section>
+
+    <section class="local section">
+      <div>
+        <p class="eyebrow">VEN A VERNOS</p>
+        <h2>El mejor algoritmo<br>todavía huele a papel.</h2>
+      </div>
+      <div class="local-info">
+        <p>Calle de las Letras #18-42<br>Pereira, Risaralda</p>
+        <p>Lun–Sáb · 9:00 — 19:00<br>Dom · 10:00 — 16:00</p>
+        <button class="text-btn" id="mapBtn">Cómo llegar ↗</button>
+      </div>
+    </section>
+  </main>
+
+  
+<section class="registro" id="registro">
+  <h2>Únete al universo Aurora</h2>
+  <p>Descubramos juntos tu próxima historia.</p>
+
+  <form id="formularioRegistro">
+    <label for="nombre">Nombre completo</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="correo">Correo electrónico</label>
+    <input type="email" id="correo" name="correo" required>
+
+    <label for="edad">Edad</label>
+    <input type="number" id="edad" name="edad"
+           min="1" max="120" required>
+
+    <button type="submit">Enviar</button>
+    <p id="mensajeFormulario" aria-live="polite"></p>
+  </form>
+</section>
+
+
+  <footer class="site-footer">
+    <div><strong>AURORA</strong><br><span>LIBROS & CAFÉ</span></div>
+    <p>Hecho localmente para lectores que todavía creen<br>que una buena historia puede cambiar el día.</p>
+    <span>© 2026</span>
+  </footer>
+
+  <div class="search-overlay" id="searchOverlay" aria-hidden="true">
+    <button class="close-btn" id="closeSearch" aria-label="Cerrar búsqueda">×</button>
+    <div class="search-inner">
+      <p class="eyebrow">BUSCAR EN LA LIBRERÍA</p>
+      <label for="searchInput">¿Qué historia estás buscando?</label>
+      <input id="searchInput" type="search" autocomplete="off" placeholder="Título, autor, categoría...">
+      <div id="searchResults" class="search-results"></div>
+    </div>
+  </div>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="drawer-head">
+      <div><p class="eyebrow">TU BOLSA</p><h2>Libros elegidos</h2></div>
+      <button class="close-btn" id="closeCart" aria-label="Cerrar carrito">×</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-footer">
+      <div><span>Total</span><strong id="cartTotal">$0</strong></div>
+      <button class="btn btn-dark" id="checkoutBtn">Finalizar compra <span>→</span></button>
+      <small>Demo local. No se procesan pagos reales.</small>
+    </div>
+  </aside>
+
+  <div class="modal-backdrop" id="modalBackdrop" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="close-btn" id="closeModal" aria-label="Cerrar">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+
+  <!-- NUEVA FUNCIONALIDAD DEL TALLER: USUARIOS Y PUBLICACIONES -->
+  <section class="api-community section" id="seccionUsuarios">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">04 / COMUNIDAD AURORA</p>
+        <h2>Las personas<br>también cuentan historias.</h2>
+      </div>
+      <p class="section-intro">Consulta usuarios de prueba y descubre las publicaciones que ha compartido cada persona.</p>
+    </div>
+
+    <div class="api-heading-row">
+      <div>
+        <p class="eyebrow">DIRECTORIO</p>
+        <h3>Usuarios</h3>
+      </div>
+      <button class="btn btn-dark api-refresh" id="recargarUsuarios" type="button">Actualizar usuarios ↻</button>
+    </div>
+    <p id="estadoUsuarios" class="api-status" role="status">Cargando usuarios...</p>
+    <div id="listaUsuarios" class="api-users-grid"></div>
+
+    <div class="api-heading-row api-posts-heading">
+      <div>
+        <p class="eyebrow">LO QUE HAN COMPARTIDO</p>
+        <h3>Publicaciones</h3>
+      </div>
+    </div>
+    <p id="estadoPublicaciones" class="api-status" role="status">Selecciona un usuario para consultar sus publicaciones.</p>
+    <div id="listaPublicaciones" class="api-posts-grid"></div>
+  </section>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
